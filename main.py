@@ -38,6 +38,7 @@ llm = ChatOpenAI(
 
 @tool
 def get_stock_price(symbole: str) -> str:
+    """Retourne le cours d'une action a partir de son symbole (ex: AAPL, MSFT)."""
     return obtenir_cours_action(symbole)
 
 tavily_tool = TavilySearch(

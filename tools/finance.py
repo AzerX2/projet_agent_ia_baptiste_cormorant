@@ -1,7 +1,3 @@
-# TODO: Implémenter les outils financiers avec yfinance
-# - get_stock_price(ticker: str) -> str
-# - get_stock_news(ticker: str) -> str
-
 import yfinance as yf
 import datetime
 
@@ -41,20 +37,6 @@ def get_stock_news(ticker: str) -> str:
         return res
     except Exception as e:
         return f"Erreur news: {e}"
-
-# TODO: Importer les outils depuis tools/
-# from tools.finance import get_stock_price, get_stock_news
-# from tools.calculs import python_tool
-
-# TODO: Initialiser le LLM
-# from langchain_openai import ChatOpenAI
-# llm = ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"), model="gpt-4o", temperature=0)
-
-# TODO: Définir le prompt avec MessagesPlaceholder("agent_scratchpad")
-
-# TODO: Créer l'agent avec create_tool_calling_agent + AgentExecutor
-
-# TODO: Tests 1 à 4
 
 import random, datetime
 
